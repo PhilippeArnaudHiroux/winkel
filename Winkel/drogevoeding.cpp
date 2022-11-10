@@ -6,6 +6,4 @@ drogeVoeding::drogeVoeding(std::string groot_of_klein) : groot_of_klein(groot_of
 }
 
 drogeVoeding::~drogeVoeding() //Destructor
-{
-
-}
+{}
