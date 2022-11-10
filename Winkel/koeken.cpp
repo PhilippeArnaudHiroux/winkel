@@ -8,7 +8,7 @@ koeken::koeken(std::string groot_of_klein) : drogeVoeding(groot_of_klein) //Cons
 koeken::~koeken() //Destructor
 {}
 
-float koeken::prijs(int aantal)
+float koeken::prijs(int aantal) //Virtuele functie
 {
     if(groot_of_klein == "klein")
     {

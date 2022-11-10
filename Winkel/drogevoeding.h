@@ -10,7 +10,7 @@ public:
     drogeVoeding(std::string groot_of_klein); //Constructor
     ~drogeVoeding(); //Destructor
 
-    virtual float prijs(int aantal) = 0;
+    virtual float prijs(int aantal) = 0; //Virtuele functie
 
 protected:
     std::string groot_of_klein;

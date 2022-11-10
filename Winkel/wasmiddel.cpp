@@ -8,7 +8,7 @@ wasmiddel::wasmiddel(std::string groot_of_klein) : drogeVoeding(groot_of_klein) 
 wasmiddel::~wasmiddel() //Destructor
 {}
 
-float wasmiddel::prijs(int aantal)
+float wasmiddel::prijs(int aantal) //Virtuele functie
 {
     if(groot_of_klein == "klein")
     {

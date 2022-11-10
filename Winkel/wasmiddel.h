@@ -9,7 +9,7 @@ public:
     wasmiddel(std::string groot_of_klein); //Constructor
     ~wasmiddel(); //Destructor
 
-    float prijs(int aantal);
+    float prijs(int aantal); //Virtuele functie
 
 protected:
     float product_prijs = 5.45;
