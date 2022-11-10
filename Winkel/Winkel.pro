@@ -4,4 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        drogevoeding.cpp \
+        koeken.cpp \
+        main.cpp \
+        wasmiddel.cpp
+
+HEADERS += \
+    drogevoeding.h \
+    koeken.h \
+    wasmiddel.h
