@@ -6,7 +6,10 @@
 class wasmiddel : public drogeVoeding
 {
 public:
-    wasmiddel();
+    wasmiddel(std::string groot_of_klein); //Constructor
+    ~wasmiddel(); //Destructor
+
+    float prijs(int aantal);
 };
 
 #endif // WASMIDDEL_H
