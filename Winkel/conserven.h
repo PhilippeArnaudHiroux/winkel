@@ -13,9 +13,6 @@ public:
     ~conserven(); //Destructor
 
     float prijs(int aantal); //Virtuele functie
-
-protected:
-    //float product_prijs = 1.3;
 };
 
 #endif // CONSERVEN_H

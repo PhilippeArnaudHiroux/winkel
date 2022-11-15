@@ -13,9 +13,6 @@ public:
     ~koeken(); //Destructor
 
     float prijs(int aantal); //Virtuele functie
-
-protected:
-    //float product_prijs = 2.99;
 };
 
 #endif // KOEKEN_H

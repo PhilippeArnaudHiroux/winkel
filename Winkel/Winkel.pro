@@ -8,10 +8,12 @@ SOURCES += \
         drogevoeding.cpp \
         koeken.cpp \
         main.cpp \
-        wasmiddel.cpp
+        wasmiddel.cpp \
+        winkel.cpp
 
 HEADERS += \
     conserven.h \
     drogevoeding.h \
     koeken.h \
-    wasmiddel.h
+    wasmiddel.h \
+    winkel.h

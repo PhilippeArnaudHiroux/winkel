@@ -13,9 +13,6 @@ public:
     ~wasmiddel(); //Destructor
 
     float prijs(int aantal); //Virtuele functie
-
-protected:
-    //float product_prijs = 5.45;
 };
 
 #endif // WASMIDDEL_H
