@@ -1,7 +1,10 @@
 #ifndef WASMIDDEL_H
 #define WASMIDDEL_H
 
+#include <iostream>
 #include "drogevoeding.h"
+
+using namespace std;
 
 class wasmiddel : public drogeVoeding
 {
@@ -12,7 +15,7 @@ public:
     float prijs(int aantal); //Virtuele functie
 
 protected:
-    float product_prijs = 5.45;
+    //float product_prijs = 5.45;
 };
 
 #endif // WASMIDDEL_H

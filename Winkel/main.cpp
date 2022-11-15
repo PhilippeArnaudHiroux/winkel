@@ -30,12 +30,15 @@ int main()
     cout << "Als je naar de volgende afdeling wilt duw dan op 0" << endl;
 
     do{
-        cout << "Keuze: ";
-        cin >> keuze;
-        if(keuze != 0)
+       cout << "Keuze: ";
+       cin >> keuze;
+
+        if(keuze > 0 && keuze < 4)
         {
-            cout << "Klein of groot: ";
-            cin >> grootOfKlein;
+            do{
+                cout << "Klein of groot: ";
+                cin >> grootOfKlein;
+            }while(grootOfKlein != "klein" && grootOfKlein != "groot");
 
             cout << "Aantal: ";
             cin >> aantal[j];

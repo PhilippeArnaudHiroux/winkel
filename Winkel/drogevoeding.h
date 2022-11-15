@@ -14,6 +14,7 @@ public:
 
 protected:
     std::string groot_of_klein;
+    float product_prijs = 0;
 };
 
 #endif // DROGEVOEDING_H
