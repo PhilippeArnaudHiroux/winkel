@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-  winkel* carrefour = new winkel;
+  winkel carrefour;
 
     return 0;
 }
