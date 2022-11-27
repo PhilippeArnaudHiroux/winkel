@@ -9,10 +9,8 @@
 #include "koeken.h"
 #include "wasmiddel.h"
 #include "conserven.h"
-#include "tekst.h"
 
 using namespace std;
-
 
 class winkel
 {

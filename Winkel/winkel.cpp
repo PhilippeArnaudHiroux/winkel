@@ -46,9 +46,7 @@ winkel::winkel()
     }
 }
 winkel::~winkel()
-{
-
-}
+{}
 
 void winkel::tekst_groot_of_klein()
 {

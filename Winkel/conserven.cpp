@@ -6,9 +6,7 @@ conserven::conserven(std::string groot_of_klein) : drogeVoeding(groot_of_klein) 
 }
 
 conserven::~conserven() //Destructor
-{
-
-}
+{}
 
 float conserven::prijs(int aantal) //Virtuele functie
 {
