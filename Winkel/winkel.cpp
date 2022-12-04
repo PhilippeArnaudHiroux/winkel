@@ -2,7 +2,7 @@
 
 winkel::winkel()
 {
-    vector <drogeVoeding*> droge_voeding;
+
 
     tekst_groot_of_klein();
     tekst_drogevoeding();

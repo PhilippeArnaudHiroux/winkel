@@ -22,6 +22,7 @@ public:
     void tekst_drogevoeding();
 
 protected:
+    vector <drogeVoeding*> droge_voeding;
     int keuze = 0;
     int aantal[1000];
     string grootOfKlein;
