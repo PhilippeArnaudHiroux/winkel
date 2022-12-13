@@ -133,11 +133,11 @@ debug/koeken.o: ../Winkel/koeken.cpp ../Winkel/koeken.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\koeken.o ..\Winkel\koeken.cpp
 
 debug/main.o: ../Winkel/main.cpp ../Winkel/winkel.h \
+		../Winkel/tekst.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \
-		../Winkel/conserven.h \
-		../Winkel/tekst.h
+		../Winkel/conserven.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\Winkel\main.cpp
 
 debug/wasmiddel.o: ../Winkel/wasmiddel.cpp ../Winkel/wasmiddel.h \
@@ -145,6 +145,7 @@ debug/wasmiddel.o: ../Winkel/wasmiddel.cpp ../Winkel/wasmiddel.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\wasmiddel.o ..\Winkel\wasmiddel.cpp
 
 debug/winkel.o: ../Winkel/winkel.cpp ../Winkel/winkel.h \
+		../Winkel/tekst.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \

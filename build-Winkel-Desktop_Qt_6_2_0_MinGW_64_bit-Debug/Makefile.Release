@@ -133,11 +133,11 @@ release/koeken.o: ../Winkel/koeken.cpp ../Winkel/koeken.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\koeken.o ..\Winkel\koeken.cpp
 
 release/main.o: ../Winkel/main.cpp ../Winkel/winkel.h \
+		../Winkel/tekst.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \
-		../Winkel/conserven.h \
-		../Winkel/tekst.h
+		../Winkel/conserven.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Winkel\main.cpp
 
 release/wasmiddel.o: ../Winkel/wasmiddel.cpp ../Winkel/wasmiddel.h \
@@ -145,6 +145,7 @@ release/wasmiddel.o: ../Winkel/wasmiddel.cpp ../Winkel/wasmiddel.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\wasmiddel.o ..\Winkel\wasmiddel.cpp
 
 release/winkel.o: ../Winkel/winkel.cpp ../Winkel/winkel.h \
+		../Winkel/tekst.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \

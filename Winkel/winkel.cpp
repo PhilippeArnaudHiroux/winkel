@@ -5,6 +5,18 @@ winkel::winkel()
     tekst::grootOfKlein();
     tekst::drogevoeding();
 
+    droogVoeding();
+
+    for(int i=0; i<j; i++)
+    {
+        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;
+    }
+}
+winkel::~winkel()
+{}
+
+void winkel::droogVoeding()
+{
     do{
        cout << "Keuze: ";
        cin >> keuze;
@@ -37,11 +49,4 @@ winkel::winkel()
 
         cout << endl;
     }while(keuze != 0);
-
-    for(int i=0; i<j; i++)
-    {
-        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;
-    }
 }
-winkel::~winkel()
-{}

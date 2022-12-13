@@ -12,13 +12,15 @@
 #include "wasmiddel.h"
 #include "conserven.h"
 
-//using namespace std;
+using namespace std;
 
 class winkel
 {
 public:
     winkel();
     ~winkel();
+
+    void droogVoeding();
 
 protected:
     vector <drogeVoeding*> droge_voeding;
