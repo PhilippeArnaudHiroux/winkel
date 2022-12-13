@@ -15,5 +15,6 @@ HEADERS += \
     conserven.h \
     drogevoeding.h \
     koeken.h \
+    tekst.h \
     wasmiddel.h \
     winkel.h

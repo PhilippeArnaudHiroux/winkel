@@ -3,14 +3,14 @@
 
 #include <iostream>
 #include <string>
-#include "tekst.h"
 
 using namespace std;
 
 class drogeVoeding
+
 {
 public:
-    drogeVoeding(std::string groot_of_klein); //Constructor
+    drogeVoeding(string groot_of_klein); //Constructor
     ~drogeVoeding(); //Destructor
 
     virtual float prijs(int aantal) = 0; //Virtuele functie
@@ -18,7 +18,7 @@ public:
     float getProduct_prijs() const;
 
 protected:
-    std::string groot_of_klein;
+    string groot_of_klein;
 
 private:
     float product_prijs = 0;    

@@ -1,6 +1,6 @@
 #include "wasmiddel.h"
 
-wasmiddel::wasmiddel(std::string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
+wasmiddel::wasmiddel(string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
 {
     setProduct_prijs(5.45);
 }

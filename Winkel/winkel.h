@@ -5,21 +5,20 @@
 #include <string>
 #include <vector>
 
+#include "tekst.h"
+
 #include "drogevoeding.h"
 #include "koeken.h"
 #include "wasmiddel.h"
 #include "conserven.h"
 
-using namespace std;
+//using namespace std;
 
 class winkel
 {
 public:
     winkel();
     ~winkel();
-
-    void tekst_groot_of_klein();
-    void tekst_drogevoeding();
 
 protected:
     vector <drogeVoeding*> droge_voeding;

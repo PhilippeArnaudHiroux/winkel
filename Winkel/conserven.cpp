@@ -1,6 +1,6 @@
 #include "conserven.h"
 
-conserven::conserven(std::string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
+conserven::conserven(string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
 {
     setProduct_prijs(1.3);
 }

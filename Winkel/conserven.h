@@ -9,7 +9,7 @@ using namespace std;
 class conserven : public drogeVoeding
 {
 public:
-    conserven(std::string groot_of_klein); //Constructor
+    conserven(string groot_of_klein); //Constructor
     ~conserven(); //Destructor
 
     float prijs(int aantal); //Virtuele functie

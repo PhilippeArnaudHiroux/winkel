@@ -1,6 +1,6 @@
 #include "koeken.h"
 
-koeken::koeken(std::string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
+koeken::koeken(string groot_of_klein) : drogeVoeding(groot_of_klein) //Constructor
 {
     setProduct_prijs(2.99);
 }

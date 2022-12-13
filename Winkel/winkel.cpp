@@ -2,10 +2,8 @@
 
 winkel::winkel()
 {
-
-
-    tekst_groot_of_klein();
-    tekst_drogevoeding();
+    tekst::grootOfKlein();
+    tekst::drogevoeding();
 
     do{
        cout << "Keuze: ";
@@ -47,19 +45,3 @@ winkel::winkel()
 }
 winkel::~winkel()
 {}
-
-void winkel::tekst_groot_of_klein()
-{
-    cout << "***** Klein of groot *****" << endl;
-    cout << "Voor klein type klein" << endl;
-    cout << "Voor groot type groot" << endl << endl;
-}
-
-void winkel::tekst_drogevoeding()
-{
-    cout << "***** Welkom bij droge voeding *****" << endl;
-    cout << "Als je koeken wilt kopen duw dan op 1" << endl;
-    cout << "Als je wasmiddel wilt kopen duw dan op 2" << endl;
-    cout << "Als je conserven wilt kopen duw dan op 3" << endl;
-    cout << "Als je naar de volgende afdeling wilt duw dan op 0" << endl;
-}

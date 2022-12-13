@@ -9,7 +9,7 @@ using namespace std;
 class wasmiddel : public drogeVoeding
 {
 public:
-    wasmiddel(std::string groot_of_klein); //Constructor
+    wasmiddel(string groot_of_klein); //Constructor
     ~wasmiddel(); //Destructor
 
     float prijs(int aantal); //Virtuele functie
