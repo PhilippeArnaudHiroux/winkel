@@ -6,19 +6,13 @@ winkel::winkel()
     tekst::drogevoeding();
 
     droogVoeding();
- ofstream MyFile("output.txt");
     //drank();
 
     for(int i=0; i<j; i++)
     {
-        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;
-        MyFile << droge_voeding.at(i)->prijs(aantal[i]) << endl;
+        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;      
     }
 
-
-
-    //MyFile << "test";
-    MyFile.close();
 }
 winkel::~winkel()
 {}
