@@ -1,0 +1,10 @@
+debug/conserven.o
+debug/drank.o
+debug/drogevoeding.o
+debug/fruitsap.o
+debug/koeken.o
+debug/main.o
+debug/wasmiddel.o
+debug/water.o
+debug/wijn.o
+debug/winkel.o

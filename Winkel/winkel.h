@@ -12,6 +12,11 @@
 #include "wasmiddel.h"
 #include "conserven.h"
 
+#include "drank.h"
+#include "fruitsap.h"
+#include "water.h"
+#include "wijn.h"
+
 using namespace std;
 
 class winkel
@@ -21,9 +26,11 @@ public:
     ~winkel();
 
     void droogVoeding();
+    void drank();
 
 protected:
     vector <drogeVoeding*> droge_voeding;
+    vector <dranken*> drinken;
     int keuze = 0;
     int aantal[1000];
     string grootOfKlein;

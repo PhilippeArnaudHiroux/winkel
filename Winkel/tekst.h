@@ -3,22 +3,22 @@
 
 #include <iostream>
 
-namespace tekst
+namespace tekst //Eigen namespace
 {
-    inline void grootOfKlein()
+    inline void grootOfKlein() //Inline function
     {
-        std::cout << "***** Klein of groot *****" << std::endl;
-        std::cout << "Voor klein type klein" << std::endl;
-        std::cout << "Voor groot type groot" << std::endl << std::endl;
+        std::cout << "***** Klein of groot *****" << std::endl; //Print de tekst
+        std::cout << "Voor klein type klein" << std::endl; //Print de tekst
+        std::cout << "Voor groot type groot" << std::endl << std::endl; //Print de tekst
     }
 
-    inline void drogevoeding()
+    inline void drogevoeding() //Inline fucntion
     {
-        std::cout << "***** Welkom bij droge voeding *****" << std::endl;
-        std::cout << "Als je koeken wilt kopen duw dan op 1" << std::endl;
-        std::cout << "Als je wasmiddel wilt kopen duw dan op 2" << std::endl;
-        std::cout << "Als je conserven wilt kopen duw dan op 3" << std::endl;
-        std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl;
+        std::cout << "***** Welkom bij droge voeding *****" << std::endl; //Print de tekst
+        std::cout << "Als je koeken wilt kopen duw dan op 1" << std::endl; //Print de tekst
+        std::cout << "Als je wasmiddel wilt kopen duw dan op 2" << std::endl; //Print de tekst
+        std::cout << "Als je conserven wilt kopen duw dan op 3" << std::endl; //Print de tekst
+        std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
     }
 }
 

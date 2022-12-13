@@ -1,12 +1,18 @@
 #ifndef FRUITSAP_H
 #define FRUITSAP_H
 
+#include <iostream>
 #include "drank.h"
 
-class fruitsap : public drank
+using namespace std;
+
+class fruitsap : public dranken
 {
 public:
-    fruitsap();
+    fruitsap(string groot_of_klein);
+    ~fruitsap();
+
+    float prijs(int aantal);
 };
 
 #endif // FRUITSAP_H
