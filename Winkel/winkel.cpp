@@ -10,11 +10,16 @@ winkel::winkel()
     tekst::drankenAfdeeling();
     drank();
 
-    for(int i=0; i<1; i++)
+    for(int i=0; i<j; i++)
     {
-        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;
-        cout << drinken.at(0)->prijs(aantal[i+1]);
+        cout << droge_voeding.at(i)->prijs(aantalVoeding[i]) << endl;
     }
+
+    for(int i=0; i<k; i++)
+    {
+        cout << drinken.at(i)->prijs(aantalDrank[i]) << endl;
+    }
+
 
 }
 winkel::~winkel()
@@ -34,7 +39,7 @@ void winkel::droogVoeding()
             }while(grootOfKlein != "klein" && grootOfKlein != "groot");
 
             cout << "Aantal: ";
-            cin >> aantal[j];
+            cin >> aantalVoeding[j];
 
             if(keuze == 1)
             {
@@ -70,7 +75,7 @@ void winkel::drank()
             }while(grootOfKlein != "klein" && grootOfKlein != "groot");
 
             cout << "Aantal: ";
-            cin >> aantal[j];
+            cin >> aantalDrank[k];
 
             if(keuze == 1)
             {
@@ -85,7 +90,7 @@ void winkel::drank()
                 drinken.push_back(new wijn(grootOfKlein));
             }
 
-            j++;
+            k++;
         }
 
         cout << endl;

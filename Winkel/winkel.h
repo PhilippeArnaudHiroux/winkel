@@ -32,9 +32,11 @@ protected:
     vector <drogeVoeding*> droge_voeding;
     vector <dranken*> drinken;
     int keuze = 0;
-    int aantal[1000];
+    int aantalVoeding[1000];
+    int aantalDrank[1000];
     string grootOfKlein;
     int j = 0;
+    int k = 0;
 };
 
 #endif // WINKEL_H
