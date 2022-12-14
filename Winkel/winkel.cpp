@@ -3,14 +3,17 @@
 winkel::winkel()
 {
     tekst::grootOfKlein();
-    tekst::drogevoeding();
 
+    tekst::drogevoedingAfdeeling();
     droogVoeding();
-    //drank();
 
-    for(int i=0; i<j; i++)
+    tekst::drankenAfdeeling();
+    drank();
+
+    for(int i=0; i<1; i++)
     {
-        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;      
+        cout << droge_voeding.at(i)->prijs(aantal[i]) << endl;
+        cout << drinken.at(0)->prijs(aantal[i+1]);
     }
 
 }

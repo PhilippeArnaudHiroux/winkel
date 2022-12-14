@@ -20,7 +20,7 @@ protected:
     string groot_of_klein;
 
 private:
-    float product_prijs = 0;
+    float product_prijs = 23;
 };
 
 #endif // DRANK_H
