@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "drogevoeding.h"
+#include <fstream>
 
 using namespace std;
 
@@ -14,9 +15,12 @@ public:
 
     float prijs(int aantal); //Virtuele functie
 
+
+
+
     // t interface
 public:
-    void test();
+    //void test();
 };
 
 #endif // KOEKEN_H

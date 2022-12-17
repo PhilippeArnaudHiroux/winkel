@@ -50,42 +50,58 @@ OBJECTS_DIR   = release
 
 ####### Files
 
-SOURCES       = ..\Winkel\conserven.cpp \
+SOURCES       = ..\Winkel\boeken.cpp \
+		..\Winkel\conserven.cpp \
 		..\Winkel\drank.cpp \
 		..\Winkel\drogevoeding.cpp \
 		..\Winkel\fruitsap.cpp \
+		..\Winkel\kleren.cpp \
 		..\Winkel\koeken.cpp \
 		..\Winkel\main.cpp \
+		..\Winkel\nonfood.cpp \
+		..\Winkel\tv.cpp \
 		..\Winkel\wasmiddel.cpp \
 		..\Winkel\water.cpp \
 		..\Winkel\wijn.cpp \
 		..\Winkel\winkel.cpp 
-OBJECTS       = release/conserven.o \
+OBJECTS       = release/boeken.o \
+		release/conserven.o \
 		release/drank.o \
 		release/drogevoeding.o \
 		release/fruitsap.o \
+		release/kleren.o \
 		release/koeken.o \
 		release/main.o \
+		release/nonfood.o \
+		release/tv.o \
 		release/wasmiddel.o \
 		release/water.o \
 		release/wijn.o \
 		release/winkel.o
 
-DIST          =  conserven.h \
+DIST          =  boeken.h \
+		conserven.h \
 		drank.h \
 		drogevoeding.h \
 		fruitsap.h \
+		kleren.h \
 		koeken.h \
-		tekst.h \
+		nonfood.h \
+		pah.h \
+		tv.h \
 		wasmiddel.h \
 		water.h \
 		wijn.h \
-		winkel.h ..\Winkel\conserven.cpp \
+		winkel.h ..\Winkel\boeken.cpp \
+		..\Winkel\conserven.cpp \
 		..\Winkel\drank.cpp \
 		..\Winkel\drogevoeding.cpp \
 		..\Winkel\fruitsap.cpp \
+		..\Winkel\kleren.cpp \
 		..\Winkel\koeken.cpp \
 		..\Winkel\main.cpp \
+		..\Winkel\nonfood.cpp \
+		..\Winkel\tv.cpp \
 		..\Winkel\wasmiddel.cpp \
 		..\Winkel\water.cpp \
 		..\Winkel\wijn.cpp \
@@ -112,7 +128,7 @@ dist:
 	$(ZIP) Winkel.zip $(SOURCES) $(DIST) ..\Winkel\Winkel.pro C:\Qt\6.2.0\mingw81_64\mkspecs\features\spec_pre.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\device_config.prf C:\Qt\6.2.0\mingw81_64\mkspecs\common\sanitize.conf C:\Qt\6.2.0\mingw81_64\mkspecs\common\gcc-base.conf C:\Qt\6.2.0\mingw81_64\mkspecs\common\g++-base.conf C:\Qt\6.2.0\mingw81_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.2.0\mingw81_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.2.0\mingw81_64\mkspecs\common\g++-win32.conf C:\Qt\6.2.0\mingw81_64\mkspecs\common\windows-desktop.conf C:\Qt\6.2.0\mingw81_64\mkspecs\qconfig.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_linguist_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.2.0\mingw81_64\mkspecs\features\qt_functions.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\qt_config.prf C:\Qt\6.2.0\mingw81_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.2.0\mingw81_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.2.0\mingw81_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\toolchain.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\default_pre.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\resolve_config.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\default_post.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\build_pass.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\win32\console.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\qml_debug.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\entrypoint.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\precompile_header.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\warn_on.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\qmake_use.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\file_copies.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\testcase_targets.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\exceptions.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\yacc.prf C:\Qt\6.2.0\mingw81_64\mkspecs\features\lex.prf ..\Winkel\Winkel.pro      
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\conserven.o release\drank.o release\drogevoeding.o release\fruitsap.o release\koeken.o release\main.o release\wasmiddel.o release\water.o release\wijn.o release\winkel.o
+	-$(DEL_FILE) release\boeken.o release\conserven.o release\drank.o release\drogevoeding.o release\fruitsap.o release\kleren.o release\koeken.o release\main.o release\nonfood.o release\tv.o release\wasmiddel.o release\water.o release\wijn.o release\winkel.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -137,6 +153,10 @@ compiler_clean:
 
 ####### Compile
 
+release/boeken.o: ../Winkel/boeken.cpp ../Winkel/boeken.h \
+		../Winkel/nonfood.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\boeken.o ..\Winkel\boeken.cpp
+
 release/conserven.o: ../Winkel/conserven.cpp ../Winkel/conserven.h \
 		../Winkel/drogevoeding.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\conserven.o ..\Winkel\conserven.cpp
@@ -151,17 +171,37 @@ release/fruitsap.o: ../Winkel/fruitsap.cpp ../Winkel/fruitsap.h \
 		../Winkel/drank.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\fruitsap.o ..\Winkel\fruitsap.cpp
 
+release/kleren.o: ../Winkel/kleren.cpp ../Winkel/kleren.h \
+		../Winkel/nonfood.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\kleren.o ..\Winkel\kleren.cpp
+
 release/koeken.o: ../Winkel/koeken.cpp ../Winkel/koeken.h \
-		../Winkel/drogevoeding.h
+		../Winkel/drogevoeding.h \
+		../Winkel/pah.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\koeken.o ..\Winkel\koeken.cpp
 
 release/main.o: ../Winkel/main.cpp ../Winkel/winkel.h \
-		../Winkel/tekst.h \
+		../Winkel/pah.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \
-		../Winkel/conserven.h
+		../Winkel/conserven.h \
+		../Winkel/drank.h \
+		../Winkel/fruitsap.h \
+		../Winkel/water.h \
+		../Winkel/wijn.h \
+		../Winkel/nonfood.h \
+		../Winkel/boeken.h \
+		../Winkel/kleren.h \
+		../Winkel/tv.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Winkel\main.cpp
+
+release/nonfood.o: ../Winkel/nonfood.cpp ../Winkel/nonfood.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nonfood.o ..\Winkel\nonfood.cpp
+
+release/tv.o: ../Winkel/tv.cpp ../Winkel/tv.h \
+		../Winkel/nonfood.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\tv.o ..\Winkel\tv.cpp
 
 release/wasmiddel.o: ../Winkel/wasmiddel.cpp ../Winkel/wasmiddel.h \
 		../Winkel/drogevoeding.h
@@ -176,11 +216,19 @@ release/wijn.o: ../Winkel/wijn.cpp ../Winkel/wijn.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\wijn.o ..\Winkel\wijn.cpp
 
 release/winkel.o: ../Winkel/winkel.cpp ../Winkel/winkel.h \
-		../Winkel/tekst.h \
+		../Winkel/pah.h \
 		../Winkel/drogevoeding.h \
 		../Winkel/koeken.h \
 		../Winkel/wasmiddel.h \
-		../Winkel/conserven.h
+		../Winkel/conserven.h \
+		../Winkel/drank.h \
+		../Winkel/fruitsap.h \
+		../Winkel/water.h \
+		../Winkel/wijn.h \
+		../Winkel/nonfood.h \
+		../Winkel/boeken.h \
+		../Winkel/kleren.h \
+		../Winkel/tv.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\winkel.o ..\Winkel\winkel.cpp
 
 ####### Install

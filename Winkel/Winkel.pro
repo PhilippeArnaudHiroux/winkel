@@ -28,7 +28,7 @@ HEADERS += \
     kleren.h \
     koeken.h \
     nonfood.h \
-    tekst.h \
+    pah.h \
     tv.h \
     wasmiddel.h \
     water.h \

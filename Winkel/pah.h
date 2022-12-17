@@ -1,9 +1,11 @@
-#ifndef TEKST_H
-#define TEKST_H
+#ifndef PAH_H
+#define PAH_H
 
 #include <iostream>
+#include <fstream>
 
-namespace tekst //Eigen namespace
+
+namespace pah //Eigen namespace
 {
     inline void grootOfKlein() //Inline function
     {
@@ -29,6 +31,41 @@ namespace tekst //Eigen namespace
         std::cout << "Als je wijn wilt kopen duw dan op 3" << std::endl; //Print de tekst
         std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
     }
+
+    inline void nonFoodAfdeeling()
+    {
+        std::cout << "***** Welkom bij de non food afdeling *****" << std::endl;
+        std::cout << "Als je kleren wilt kopen duw dan op 1" << std::endl; //Print de tekst
+        std::cout << "Als je TV wilt kopen duw dan op 2" << std::endl; //Print de tekst
+        std::cout << "Als je boeken wilt kopen duw dan op 3" << std::endl; //Print de tekst
+        std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
+    }
+
+    inline void afschijd()
+    {
+        std::cout << "Bedankt voor je bezoek en tot de volgende keer" << std::endl;
+    }
+
+    inline void file_clear()
+    {
+        std::ofstream file;
+        file.open("output.txt");
+        file.seekp(0);
+        file.clear();
+    }
+
+
+
+    /*inline void test(float waardes)
+    {
+        m = m + waardes;
+        //return m;
+    }*/
+
+    /*inline void f()
+    {
+        std::cout << m << std::endl;
+    }*/
 }
 
-#endif // TEKST_H
+#endif // PAH_H
