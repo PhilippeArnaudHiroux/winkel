@@ -9,10 +9,10 @@ using namespace std;
 class fruitsap : public dranken
 {
 public:
-    fruitsap(string groot_of_klein);
-    ~fruitsap();
+    fruitsap(string groot_of_klein); //Constructor
+    ~fruitsap(); //Destructor
 
-    float prijs(int aantal);
+    float prijs(int aantal); //Virtuele functie
 };
 
 #endif // FRUITSAP_H

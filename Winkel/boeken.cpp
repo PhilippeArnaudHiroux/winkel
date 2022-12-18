@@ -1,17 +1,22 @@
 #include "boeken.h"
 
-boeken::boeken(string groot_of_klein) : nonFood(groot_of_klein)
+boeken::boeken(string groot_of_klein) : nonFood(groot_of_klein) //Constructor
 {}
 
-float boeken::prijs(int aantal)
+boeken::~boeken() //Destructor
 {
-    if(groot_of_klein == "klein")
+
+}
+
+float boeken::prijs(int aantal) //Virtuele functie
+{
+    if(groot_of_klein == "klein") //Als groot_of_klein gelijks is aan
     {
-        return getProduct_prijs() * aantal;
+        return getProduct_prijs() * aantal; //Return dit
     }
-    else
+    else //Anders
     {
-        return getProduct_prijs() * 1.5 * aantal;
+        return getProduct_prijs() * 1.5 * aantal; //Return dit
     }
 }
 

@@ -5,6 +5,11 @@ kleren::kleren(string groot_of_klein) : nonFood(groot_of_klein)
 
 }
 
+kleren::~kleren()
+{
+
+}
+
 float kleren::prijs(int aantal)
 {
     if(groot_of_klein == "klein")

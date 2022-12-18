@@ -9,10 +9,10 @@ using namespace std;
 class tv : public nonFood
 {
 public:
-    tv(string groot_of_klein);
-    ~tv();
+    tv(string groot_of_klein); //Constructor
+    ~tv(); //Destructor
 
-    float prijs(int aantal);
+    float prijs(int aantal); //Virtuele functie
 };
 
 #endif // TV_H

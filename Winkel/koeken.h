@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "drogevoeding.h"
-#include <fstream>
 
 using namespace std;
 
@@ -14,13 +13,6 @@ public:
     ~koeken(); //Destructor
 
     float prijs(int aantal); //Virtuele functie
-
-
-
-
-    // t interface
-public:
-    //void test();
 };
 
 #endif // KOEKEN_H

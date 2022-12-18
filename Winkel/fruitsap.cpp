@@ -5,12 +5,12 @@ fruitsap::fruitsap(string groot_of_klein) : dranken(groot_of_klein)
 
 float fruitsap::prijs(int aantal) //Virtuele functie
 {
-    if(groot_of_klein == "klein")
+    if(groot_of_klein == "klein") //Als groot_of_klein gelijks is aan
     {
-        return getProduct_prijs() * aantal;
+        return getProduct_prijs() * aantal; //Return dit
     }
-    else
+    else //Anders
     {
-        return getProduct_prijs() * 1.5 * aantal;
+        return getProduct_prijs() * 1.5 * aantal;  //Return dit
     }
 }

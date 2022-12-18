@@ -2,12 +2,10 @@
 
 using namespace pah;
 
-kastiket::kastiket()
-{
+kastiket::kastiket() //Constructor
+{}
 
-}
-
-kastiket::~kastiket()
+kastiket::~kastiket() //Destructor
 {}
 
 float kastiket::getTotaal_droogVoeding() const
@@ -50,22 +48,22 @@ void kastiket::setTotaal(float droogVoeding, float drank, float nonFood)
     totaal = droogVoeding + drank + nonFood;
 }
 
-void kastiket::printTiket()
+void kastiket::printTiket() //Member functie
 {
-    std::ofstream File("output.txt");
-    File.seekp(0);
-    File.clear();
-    time_t timetoday;
-    time(&timetoday);
-    File << "Welkom bij uw lokale supermakt" << std::endl;
-    File << asctime(localtime(&timetoday)) << std::endl << std::endl;
+    std::ofstream File("output.txt"); //Maak file aan en open het
+    File.seekp(0); //Ga naar het begin van de file
+    File.clear(); //Maak de file leef
+    time_t timetoday; //Kijk voor de tijd
+    time(&timetoday); //Kijk voor de tijd
+    File << "Welkom bij uw lokale supermakt" << std::endl; //Print dit in de file
+    File << asctime(localtime(&timetoday)) << std::endl << std::endl; //Print dit in de file
 
-    File << "Je totaal bij droge voeding bedraagt: " << getTotaal_droogVoeding() << std::endl;
-    File << "Je totaal bij dranken bedraagt: " << getTotaal_dranken() << std::endl;
-    File << "Je totaal bij non food bedraagt: " << getTotaal_nonfood() << std::endl;
+    File << "Je totaal bij droge voeding bedraagt: " << getTotaal_droogVoeding() << std::endl; //Print dit in de file
+    File << "Je totaal bij dranken bedraagt: " << getTotaal_dranken() << std::endl; //Print dit in de file
+    File << "Je totaal bij non food bedraagt: " << getTotaal_nonfood() << std::endl; //Print dit in de file
 
     setTotaal(getTotaal_droogVoeding(), getTotaal_dranken(), getTotaal_nonfood());
-    File << "Je totaal bedraagt: " << getTotaal() << std::endl << std::endl;
+    File << "Je totaal bedraagt: " << getTotaal() << std::endl << std::endl; //Print dit in de file
 
     File.close();
 }

@@ -2,11 +2,14 @@
 #define PAH_H
 
 #include <iostream>
-#include <fstream>
-#include <time.h>
 
 namespace pah //Eigen namespace
 {
+    inline void welkom() //Inline function
+    {
+        std::cout << "***** Welkom bij uw lokale supermarkt *****" << std::endl << std::endl;
+    }
+
     inline void grootOfKlein() //Inline function
     {
         std::cout << "***** Klein of groot *****" << std::endl; //Print de tekst
@@ -23,38 +26,28 @@ namespace pah //Eigen namespace
         std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
     }
 
-    inline void drankenAfdeeling()
+    inline void drankenAfdeeling() //Inline fucntion
     {
-        std::cout << "***** Welkom bij de dranken *****" << std::endl;
+        std::cout << "***** Welkom bij de dranken *****" << std::endl; //Print de tekst
         std::cout << "Als je water wilt kopen duw dan op 1" << std::endl; //Print de tekst
         std::cout << "Als je fruitsap wilt kopen duw dan op 2" << std::endl; //Print de tekst
         std::cout << "Als je wijn wilt kopen duw dan op 3" << std::endl; //Print de tekst
         std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
     }
 
-    inline void nonFoodAfdeeling()
+    inline void nonFoodAfdeeling() //Inline fucntion
     {
-        std::cout << "***** Welkom bij de non food afdeling *****" << std::endl;
+        std::cout << "***** Welkom bij de non food afdeling *****" << std::endl; //Print de tekst
         std::cout << "Als je kleren wilt kopen duw dan op 1" << std::endl; //Print de tekst
         std::cout << "Als je TV wilt kopen duw dan op 2" << std::endl; //Print de tekst
         std::cout << "Als je boeken wilt kopen duw dan op 3" << std::endl; //Print de tekst
         std::cout << "Als je naar de volgende afdeling wilt duw dan op 0" << std::endl; //Print de tekst
     }
 
-    inline void afschijd()
+    inline void afschijd() //Inline fucntion
     {
-        std::cout << "Bedankt voor je bezoek en tot de volgende keer" << std::endl;
+        std::cout << "Bedankt voor je bezoek en tot de volgende keer" << std::endl; //Print de tekst
     }
-
-    inline void file_clear()
-    {
-        std::ofstream file;
-        file.open("output.txt");
-        file.seekp(0);
-        file.clear();
-    }
-
-
 }
 
 #endif // PAH_H

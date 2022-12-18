@@ -29,28 +29,26 @@ using namespace std;
 class winkel
 {
 public:
-    winkel();
-    ~winkel();
+    winkel(); //Constructor
+    ~winkel(); //Destructor
 
-    void droogVoeding();
-    void drank();
-    void geenEten();
+    void droogVoeding(); //Member functie
+    void drank(); //Member functie
+    void geenEten(); //Member functie
 
+protected:
+    vector <drogeVoeding*> droge_voeding; //Vector
+    vector <dranken*> drinken; //Vector
+    vector <nonFood*> non_food; //Vector
 
-
-
-    vector <drogeVoeding*> droge_voeding;
-    vector <dranken*> drinken;
-    vector <nonFood*> non_food;
- protected:
-    int* keuze = new int;
-    int aantalVoeding[1000];
-    int aantalDrank[1000];
-    int aantalNonFood[1000];
-    string grootOfKlein;
-    int j = 0;
-    int k = 0;
-    int l = 0;
+    unsigned short int* keuze = new unsigned short int; //Memory -> new
+    unsigned short int aantalVoeding[1000]; //Member variabel
+    unsigned short int aantalDrank[1000]; //Member variabel
+    unsigned short int aantalNonFood[1000]; //Member variabel
+    string grootOfKlein; //Member variabel
+    unsigned short int j = 0; //Member variabel
+    unsigned short int k = 0; //Member variabel
+    unsigned short int l = 0; //Member variabel
 };
 
 #endif // WINKEL_H

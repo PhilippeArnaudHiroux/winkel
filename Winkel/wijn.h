@@ -9,10 +9,10 @@ using namespace std;
 class wijn : public dranken
 {
 public:
-    wijn(string groot_of_klein);
-    ~wijn();
+    wijn(string groot_of_klein); //Constructor
+    ~wijn(); //Destructor
 
-    float prijs(int aantal);
+    float prijs(int aantal); //Virtuele functie
 };
 
 #endif // WIJN_H

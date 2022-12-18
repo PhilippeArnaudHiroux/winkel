@@ -2,7 +2,7 @@
 
 int main()
 {
-    winkel carrefour;
+    winkel carrefour; //Maak winkel object aan
 
     return 0;
 }

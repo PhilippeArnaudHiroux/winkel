@@ -3,33 +3,34 @@
 
 #include <iostream>
 #include <fstream>
+#include <time.h>
 #include "pah.h"
 
 class kastiket
 {
 public:
-    kastiket();
-    ~kastiket();
+    kastiket(); //Constructor
+    ~kastiket(); //Destructor
 
-    float getTotaal_droogVoeding() const;
-    void setTotaal_droogVoeding(float newTotaal_droogVoeding);
+    float getTotaal_droogVoeding() const; //Getter voor totaal_droog_Voeding
+    void setTotaal_droogVoeding(float newTotaal_droogVoeding); //Setter voor totaal_droog_Voeding
 
-    float getTotaal_dranken() const;
-    void setTotaal_dranken(float newTotaal_dranken);
+    float getTotaal_dranken() const; //Getter voor totaal dranken
+    void setTotaal_dranken(float newTotaal_dranken); //Setter voor totaal dranken
 
-    float getTotaal_nonfood() const;
-    void setTotaal_nonfood(float newTotaal_nonfood);
+    float getTotaal_nonfood() const; //Getter voor totaal nonFood
+    void setTotaal_nonfood(float newTotaal_nonfood); //Setter voor totaal nonFood
 
-    float getTotaal() const;
-    void setTotaal(float droogVoeding, float drank, float nonFood);
+    float getTotaal() const; //Getter voor totaal
+    void setTotaal(float droogVoeding, float drank, float nonFood); //Setter voor totaal
 
-    void printTiket();
+    void printTiket(); //Member functie
 
 private:
-    float totaal_droogVoeding = 0;
-    float totaal_dranken = 0;
-    float totaal_nonfood = 0;
-    float totaal = 0;
+    float totaal_droogVoeding = 0; //Member variabel
+    float totaal_dranken = 0; //Member variabel
+    float totaal_nonfood = 0; //Member variabel
+    float totaal = 0; //Member variabel
 };
 
 #endif // KASTIKET_H

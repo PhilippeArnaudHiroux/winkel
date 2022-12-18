@@ -3,6 +3,9 @@
 nonFood::nonFood(string groot_of_klein) : groot_of_klein(groot_of_klein)
 {}
 
+nonFood::~nonFood()
+{}
+
 float nonFood::getProduct_prijs() const
 {
     return product_prijs;

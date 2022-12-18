@@ -2,46 +2,46 @@
 
 winkel::winkel()
 {
-    kastiket tiket;
+    kastiket tiket; //Maak tiket object aan
 
-    pah::file_clear();
-    pah::grootOfKlein();
+    pah::welkom();
+    pah::grootOfKlein(); //Functie uit namespace
 
-    pah::drogevoedingAfdeeling();
-    droogVoeding();
+    pah::drogevoedingAfdeeling(); //Functie uit namespace
+    droogVoeding(); //Voer de member functie uit
 
-    pah::drankenAfdeeling();
-    drank();
+    pah::drankenAfdeeling(); //Functie uit namespace
+    drank(); //Voer de member functie uit
 
-    pah::nonFoodAfdeeling();
-    geenEten();
+    pah::nonFoodAfdeeling(); //Functie uit namespace
+    geenEten(); //Voer de member functie uit
 
-    for(int i=0; i<j; i++)
+    for(int i=0; i<j; i++) //Doe dit zolang dat i<j
     {
-        tiket.setTotaal_droogVoeding(droge_voeding.at(i)->prijs(aantalVoeding[i]));
+        tiket.setTotaal_droogVoeding(droge_voeding.at(i)->prijs(aantalVoeding[i])); //Hier word de prijs van het element bij de totaal prijs geteld
     }
 
-    for(int i=0; i<k; i++)
+    for(int i=0; i<k; i++) //Doe dit zolang dat i<j
     {
-        tiket.setTotaal_dranken(drinken.at(i)->prijs(aantalDrank[i]));
+        tiket.setTotaal_dranken(drinken.at(i)->prijs(aantalDrank[i])); //Hier word de prijs van het element bij de totaal prijs geteld
     }
 
-    for(int i=0; i<l; i++)
+    for(int i=0; i<l; i++) //Doe dit zolang dat i<j
     {
-        tiket.setTotaal_nonfood(non_food.at(i)->prijs(aantalVoeding[i]));
+        tiket.setTotaal_nonfood(non_food.at(i)->prijs(aantalVoeding[i])); //Hier word de prijs van het element bij de totaal prijs geteld
     }
 
-    pah::afschijd();
-    tiket.printTiket();
+    pah::afschijd(); //Functie uit namespacce
+    tiket.printTiket(); //Functie uit tiket object
 }
 winkel::~winkel()
 {
-    delete keuze;
+    delete keuze; //Memory -> delete
 }
 
 void winkel::droogVoeding()
 {
-    do{
+    do{ //Doe
        cout << "Keuze: ";
        cin >> *keuze;
 
@@ -58,15 +58,15 @@ void winkel::droogVoeding()
 
             if(*keuze == 1)
             {
-                droge_voeding.push_back(new koeken(grootOfKlein));
+                droge_voeding.push_back(new koeken(grootOfKlein)); //Nieuw element in container
             }
             else if(*keuze == 2)
             {
-                droge_voeding.push_back(new wasmiddel(grootOfKlein));
+                droge_voeding.push_back(new wasmiddel(grootOfKlein));  //Nieuw element in container
             }
             else
             {
-                droge_voeding.push_back(new conserven(grootOfKlein));
+                droge_voeding.push_back(new conserven(grootOfKlein));  //Nieuw element in container
             }
 
             j++;
@@ -95,15 +95,15 @@ void winkel::drank()
 
             if(*keuze == 1)
             {
-                drinken.push_back(new water(grootOfKlein));
+                drinken.push_back(new water(grootOfKlein));  //Nieuw element in container
             }
             else if(*keuze == 2)
             {
-                drinken.push_back(new fruitsap(grootOfKlein));
+                drinken.push_back(new fruitsap(grootOfKlein));  //Nieuw element in container
             }
             else
             {
-                drinken.push_back(new wijn(grootOfKlein));
+                drinken.push_back(new wijn(grootOfKlein));  //Nieuw element in container
             }
 
             k++;
@@ -132,15 +132,15 @@ void winkel::geenEten()
 
             if(*keuze == 1)
             {
-                non_food.push_back(new kleren(grootOfKlein));
+                non_food.push_back(new kleren(grootOfKlein));  //Nieuw element in container
             }
             else if(*keuze == 2)
             {
-                non_food.push_back(new tv(grootOfKlein));
+                non_food.push_back(new tv(grootOfKlein));  //Nieuw element in container
             }
             else
             {
-                non_food.push_back(new boeken(grootOfKlein));
+                non_food.push_back(new boeken(grootOfKlein));  //Nieuw element in container
             }
 
             l++;

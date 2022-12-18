@@ -9,10 +9,10 @@ using namespace std;
 class kleren : public nonFood
 {
 public:
-    kleren(string groot_of_klein);
-    ~kleren();
+    kleren(string groot_of_klein); //Constructor
+    ~kleren(); //Destructor
 
-    float prijs(int aantal);
+    float prijs(int aantal); //Virtuele functie
 };
 
 #endif // KLEREN_H
