@@ -1,7 +1,9 @@
 #include "winkel.h"
 
 winkel::winkel()
-{ 
+{
+    kastiket tiket;
+
     pah::file_clear();
     pah::grootOfKlein();
 
@@ -14,28 +16,23 @@ winkel::winkel()
     pah::nonFoodAfdeeling();
     geenEten();
 
-    ofstream MyFile("output.txt", ios::app);
-
     for(int i=0; i<j; i++)
     {
-        cout << droge_voeding.at(i)->prijs(aantalVoeding[i]) << endl;
-        //MyFile << droge_voeding.at(i)->prijs(aantalVoeding[i]) << endl;
+        tiket.setTotaal_droogVoeding(droge_voeding.at(i)->prijs(aantalVoeding[i]));
     }
 
     for(int i=0; i<k; i++)
     {
-        cout << drinken.at(i)->prijs(aantalDrank[i]) << endl;
-        //MyFile << drinken.at(i)->prijs(aantalDrank[i]) << endl;
+        tiket.setTotaal_dranken(drinken.at(i)->prijs(aantalDrank[i]));
     }
 
     for(int i=0; i<l; i++)
     {
-        cout << non_food.at(i)->prijs(aantalNonFood[i]) << endl;
-        //MyFile << non_food.at(i)->prijs(aantalNonFood[i]) << endl;
+        tiket.setTotaal_nonfood(non_food.at(i)->prijs(aantalVoeding[i]));
     }
 
     pah::afschijd();
-    MyFile.close();
+    tiket.printTiket();
 }
 winkel::~winkel()
 {
@@ -50,7 +47,8 @@ void winkel::droogVoeding()
 
         if(*keuze > 0 && *keuze < 4)
         {
-            do{
+            do
+            {
                 cout << "Klein of groot: ";
                 cin >> grootOfKlein;
             }while(grootOfKlein != "klein" && grootOfKlein != "groot");
@@ -86,7 +84,8 @@ void winkel::drank()
 
         if(*keuze > 0 && *keuze < 4)
         {
-            do{
+            do
+            {
                 cout << "Klein of groot: ";
                 cin >> grootOfKlein;
             }while(grootOfKlein != "klein" && grootOfKlein != "groot");
@@ -122,7 +121,8 @@ void winkel::geenEten()
 
         if(*keuze > 0 && *keuze < 4)
         {
-            do{
+            do
+            {
                 cout << "Klein of groot: ";
                 cin >> grootOfKlein;
             }while(grootOfKlein != "klein" && grootOfKlein != "groot");

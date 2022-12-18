@@ -3,6 +3,7 @@ release/conserven.o
 release/drank.o
 release/drogevoeding.o
 release/fruitsap.o
+release/kastiket.o
 release/kleren.o
 release/koeken.o
 release/main.o

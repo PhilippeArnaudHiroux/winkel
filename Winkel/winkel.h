@@ -7,6 +7,7 @@
 #include <fstream>
 
 #include "pah.h"
+#include "kastiket.h"
 
 #include "drogevoeding.h"
 #include "koeken.h"

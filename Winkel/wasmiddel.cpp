@@ -12,12 +12,10 @@ float wasmiddel::prijs(int aantal) //Virtuele functie
 {
     if(groot_of_klein == "klein")
     {
-        cout << "wasmiddel klein -> " << getProduct_prijs() << " * " << aantal << " = ";
         return getProduct_prijs() * aantal;
     }
     else
     {
-        cout << "wasmiddel groot -> " << getProduct_prijs() * 1.5 << " * " << aantal << " = ";
         return getProduct_prijs() * 1.5 * aantal;
     }
 }

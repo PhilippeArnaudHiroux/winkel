@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <fstream>
-
+#include <time.h>
 
 namespace pah //Eigen namespace
 {
@@ -55,17 +55,6 @@ namespace pah //Eigen namespace
     }
 
 
-
-    /*inline void test(float waardes)
-    {
-        m = m + waardes;
-        //return m;
-    }*/
-
-    /*inline void f()
-    {
-        std::cout << m << std::endl;
-    }*/
 }
 
 #endif // PAH_H

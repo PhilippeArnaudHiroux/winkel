@@ -9,6 +9,7 @@ SOURCES += \
         drank.cpp \
         drogevoeding.cpp \
         fruitsap.cpp \
+        kastiket.cpp \
         kleren.cpp \
         koeken.cpp \
         main.cpp \
@@ -25,6 +26,7 @@ HEADERS += \
     drank.h \
     drogevoeding.h \
     fruitsap.h \
+    kastiket.h \
     kleren.h \
     koeken.h \
     nonfood.h \

@@ -3,6 +3,7 @@ debug/conserven.o
 debug/drank.o
 debug/drogevoeding.o
 debug/fruitsap.o
+debug/kastiket.o
 debug/kleren.o
 debug/koeken.o
 debug/main.o
