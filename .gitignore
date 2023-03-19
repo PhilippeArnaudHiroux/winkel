@@ -3,7 +3,7 @@
 
 *~
 *.autosave
-*.a
+#*.a
 *.core
 *.moc
 *.o
@@ -37,6 +37,7 @@ Thumbs.db
 
 # qtcreator generated files
 *.pro.user*
+CMakeLists.txt.user*
 
 # xemacs temporary files
 *.flc
@@ -70,4 +71,7 @@ Thumbs.db
 # --------
 *.dll
 *.exe
+
+# Ignore folders with the word build in it
+**/*build*/
 
